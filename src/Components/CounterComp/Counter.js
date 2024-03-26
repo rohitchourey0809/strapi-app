@@ -6,12 +6,32 @@ import {
   selectCount,
   incrementAsync,
   incrementByAmount,
+  addTodo,
 } from "./counterSlice";
 
 export const Counter = () => {
-  const count = useSelector(selectCount);
+  const [text, setText] = useState("");
+  const todo = useSelector((state) => {
+    console.log("State: ", state.todo.todo);
+    return state.todo.todo;
+  });
+  const count = useSelector((state) => {
+    // console.log("State: ", state);
+    return state.counter.value;
+  });
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState("2");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(
+      addTodo({
+        id: Date.now(),
+        text,
+        completed: false,
+      })
+    );
+    setText("");
+  };
   return (
     <div>
       <button
@@ -40,6 +60,18 @@ export const Counter = () => {
       >
         Add Async
       </button> */}
+      <h2>Todod</h2>
+      <div>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            placeholder="Add todo..."
+          />
+          <button type="submit">Add</button>
+        </form>
+      </div>
     </div>
   );
 };

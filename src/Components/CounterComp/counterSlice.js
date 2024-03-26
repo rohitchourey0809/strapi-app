@@ -9,14 +9,7 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-
       state.value += 1;
-
-      console.log("state------->", state);
     },
     decrement: (state) => {
       state.value -= 1;
@@ -27,7 +20,6 @@ export const counterSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
 export const incrementAsync = (amount) => (dispatch) => {
@@ -36,9 +28,27 @@ export const incrementAsync = (amount) => (dispatch) => {
   }, 1000);
 };
 
-export const selectCount = (state) => {
-  console.log("state.counter.value", state);
-  return state.counter.value;
+export const selectCount = (state) => state.counter.value;
+
+export const todoSlice = createSlice({
+  name: "todos",
+  initialState: {
+    todo: [],
+  },
+  reducers: {
+    addTodo: (state, action) => {
+      console.log("action---------------------->", action);
+      console.log("state---------------------->", state.todo);
+      state.todo.push(action.payload);
+    },
+  },
+});
+
+export const { addTodo } = todoSlice.actions;
+
+export const selectTodos = (state) => {
+  console.log("todo", state);
+  // state.todos
 };
 
 export default counterSlice.reducer;
