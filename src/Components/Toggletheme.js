@@ -3,13 +3,12 @@ import { Themecontext } from "./Context";
 
 export const Togglethemecomp = () => {
   const context = useContext(Themecontext);
-  console.log(context, "context");
-  //   console.log(toggletheme, "toggletheme");
+  console.log("context------------------------>", context);
 
   return (
     <div>
       <button onClick={context.toggletheme}>
-        Toggle Theme:{context.Theme}
+        Toggle Theme:{context.theme}
       </button>
     </div>
   );

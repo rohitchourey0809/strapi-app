@@ -8,13 +8,16 @@ export const Navbar = () => {
       <nav>
         <ul>
           <li>
-            <Link href="/strapipage">StrapiPage</Link>
+            <Link to="/strapipage">StrapiPage</Link>
           </li>
           <li>
-            <Link href="/contextpage">ContextPage</Link>
+            <Link to="/contextpage">ContextPage</Link>
           </li>
           <li>
-            <Link href="/counter">Counter</Link>
+            <Link to="/counter">Counter</Link>
+          </li>
+          <li>
+            {/* <Link to="/reduxtoolkit">ReduxToolKit</Link> */}
           </li>
         </ul>
       </nav>
