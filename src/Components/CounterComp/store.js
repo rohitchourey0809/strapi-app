@@ -1,9 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer, { todoSlice } from "./counterSlice";
+import { productsReducer } from "../Reduxcomp/productSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-    todo: todoSlice.reducer,
+    AlldataStore: productsReducer,
   },
 });
