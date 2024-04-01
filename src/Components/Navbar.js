@@ -1,74 +1,74 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <div>
       <nav className="space-x-4">
         <ul className="flex">
-          <li>
-            <Link
+          {/* <li>
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/strapipage"
+              href="/strapipage"
             >
               StrapiPage
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/contextpage"
-            >
-              ContextPage
-            </Link>
-          </li>
-          {/* <li>
-            <Link
-              className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/reduxtoolkit"
-            >
-              ReduxToolKit
-            </Link>
+            </a>
           </li> */}
           <li>
-            <Link
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/counter"
+              href="/contextpage"
+            >
+              ContextPage
+            </a>
+          </li>
+          {/* <li>
+            <a
+              className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
+              href="/reduxtoolkit"
+            >
+              ReduxToolKit
+            </a>
+          </li> */}
+          <li>
+            <a
+              className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
+              href="/counter"
             >
               Counter
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/addtodo"
+              href="/addtodo"
             >
               AddTodo
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/products"
+              href="/products"
             >
               Products
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/receipe"
+              href="/"
             >
               Receipe
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
-              to="/pokemon"
+              href="/pokemon"
             >
               Pokemon
-            </Link>
+            </a>
           </li>
           {/* <Route path="/products" element={<ProductItems />} />
           <Route path="/receipe" element={<ReceipiItem />} /> */}

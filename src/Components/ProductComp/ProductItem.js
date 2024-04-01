@@ -11,9 +11,9 @@ function ProductItems() {
 
   const status = useSelector((state) => state.AlldataStore?.status);
   const error = useSelector((state) => state.AlldataStore?.error);
-    const ProductItems = useSelector((state) => {
-      console.log("ProductItems------->", state);
-    });
+  const ProductItems = useSelector((state) => {
+    console.log("ProductItems------->", state);
+  });
 
   useEffect(() => {
     if (status === "idle") {
@@ -32,11 +32,15 @@ function ProductItems() {
   return (
     <div>
       <div className="productapi1">
-        {productapi1?.map((product) => (
-          <div key={product.id}>
-            <ProductCard product={product} />
-          </div>
-        ))}
+        {productapi1 ? (
+          productapi1?.map((product) => (
+            <div key={product.id}>
+              <ProductCard product={product} />
+            </div>
+          ))
+        ) : (
+          <div>Loading</div>
+        )}
       </div>
     </div>
   );

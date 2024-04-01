@@ -24,7 +24,7 @@ function App() {
           <Route path="/addtodo" element={<AddTodo />} />
 
           <Route path="/products" element={<ProductItems />} />
-          <Route path="/receipe" element={<ReceipiItem />} />
+          <Route path="/" element={<ReceipiItem />} />
           <Route path="/pokemon" element={<PokemonItem />} />
         </Routes>
       </BrowserRouter>

@@ -32,11 +32,15 @@ function ReceipiItem() {
   return (
     <div>
       <div className="productapi1">
-        {productapi2?.map((recipes) => (
-          <div key={recipes.id}>
-            <RecipeCard recipes={recipes} />
-          </div>
-        ))}
+        {productapi2 ? (
+          productapi2?.map((recipes) => (
+            <div key={recipes.id}>
+              <RecipeCard recipes={recipes} />
+            </div>
+          ))
+        ) : (
+          <div>Loading</div>
+        )}
       </div>
     </div>
   );
