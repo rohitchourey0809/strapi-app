@@ -17,6 +17,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          <Route path="/" element={<ReceipiItem />} />
+          <Route path="/pokemon" element={<PokemonItem />} />
           <Route path="/strapipage" element={<Strapi />} />
           <Route path="/contextpage" element={<Context />} />
           {/* <Route path="/reduxtoolkit" element={<ProductList />} /> */}
@@ -24,8 +26,6 @@ function App() {
           <Route path="/addtodo" element={<AddTodo />} />
 
           <Route path="/products" element={<ProductItems />} />
-          <Route path="/" element={<ReceipiItem />} />
-          <Route path="/pokemon" element={<PokemonItem />} />
         </Routes>
       </BrowserRouter>
       {/* <Strapi /> */}
