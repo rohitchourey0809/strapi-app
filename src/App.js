@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ReceipiItem />} />
+          <Route path="/receipe" element={<ReceipiItem />} />
           <Route path="/pokemon" element={<PokemonItem />} />
           <Route path="/strapipage" element={<Strapi />} />
           <Route path="/contextpage" element={<Context />} />
@@ -25,7 +25,7 @@ function App() {
           <Route path="/counter" element={<CounterProject />} />
           <Route path="/addtodo" element={<AddTodo />} />
 
-          <Route path="/products" element={<ProductItems />} />
+          <Route path="/" element={<ProductItems />} />
         </Routes>
       </BrowserRouter>
       {/* <Strapi /> */}
