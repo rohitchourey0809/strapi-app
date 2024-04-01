@@ -17,4 +17,13 @@ const fetchProductsFromSecondAPI = createAsyncThunk(
   }
 );
 
-export { fetchProducts, fetchProductsFromSecondAPI };
+// Async thunk to fetch products from the second API
+const fetchProductsFromThirdAPI = createAsyncThunk(
+  "products/fetchProductsFromThirdAPI",
+  async () => {
+    const response = await axios.get("https://dummyjson.com/recipes");
+    return response.data;
+  }
+);
+
+export { fetchProducts, fetchProductsFromSecondAPI, fetchProductsFromThirdAPI };

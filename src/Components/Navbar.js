@@ -62,6 +62,14 @@ export const Navbar = () => {
               Receipe
             </Link>
           </li>
+          <li>
+            <Link
+              className="text-blue-500 hover:text-blue-700 hover:bg-blue-100 border-b-2 border-transparent hover:border-blue-500 px-4 py-2"
+              to="/pokemon"
+            >
+              Pokemon
+            </Link>
+          </li>
           {/* <Route path="/products" element={<ProductItems />} />
           <Route path="/receipe" element={<ReceipiItem />} /> */}
         </ul>

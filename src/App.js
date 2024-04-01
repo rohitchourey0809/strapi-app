@@ -9,6 +9,7 @@ import AddTodo from "./Components/AddtodComp/AddTodo";
 import ProductItems from "./Components/ProductComp/ProductItem";
 import ReceipiItem from "./Components/ReceipeComp/ReceipiItem";
 import { Context } from "./Components/Context";
+import PokemonItem from "./Components/PokemonComp/PokemonItem";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
           {/* <Route path="/reduxtoolkit" element={<ProductList />} /> */}
           <Route path="/counter" element={<CounterProject />} />
           <Route path="/addtodo" element={<AddTodo />} />
-          >
+
           <Route path="/products" element={<ProductItems />} />
           <Route path="/receipe" element={<ReceipiItem />} />
+          <Route path="/pokemon" element={<PokemonItem />} />
         </Routes>
       </BrowserRouter>
       {/* <Strapi /> */}
