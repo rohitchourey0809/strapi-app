@@ -99,6 +99,12 @@ export const Navbar = () => {
                   >
                     AddTodo
                   </a>
+                  <a
+                    href="/passwordgenerator"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                  >
+                    ReactPasswordGenerator
+                  </a>
                 </div>
               </div>
             </div>
@@ -231,6 +237,12 @@ export const Navbar = () => {
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               AddTodo
+            </a>
+            <a
+              href="/passwordgenerator"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+            >
+              ReactPasswordGenerator
             </a>
           </div>
         </div>

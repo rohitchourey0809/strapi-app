@@ -10,6 +10,7 @@ import ProductItems from "./Components/ProductComp/ProductItem";
 import ReceipiItem from "./Components/ReceipeComp/ReceipiItem";
 import { Context } from "./Components/Context";
 import PokemonItem from "./Components/PokemonComp/PokemonItem";
+import PasswordGenerator from "./Components/ReactPassword/ReactPassword";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/addtodo" element={<AddTodo />} />
 
           <Route path="/" element={<ProductItems />} />
+          <Route path="/passwordgenerator" element={<PasswordGenerator />} />
         </Routes>
       </BrowserRouter>
       {/* <Strapi /> */}
